@@ -216,3 +216,10 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# --- Licencjat: dane nie trafiają do repozytorium (GitHub ma limit 100 MB na plik) ---
+data/
+processed/
+*.jsonl
+*.crswap
+*.parquet
