@@ -108,6 +108,12 @@ SENTIMENT_MODEL = "cardiffnlp/twitter-roberta-base-sentiment-latest"
 NLI_MODEL = "MoritzLaurer/DeBERTa-v3-large-mnli-fever-anli-ling-wanli"
 NLI_HYPOTHESIS = "The author criticizes {}."
 NLI_THRESHOLD = 0.5
+FINETUNE_FOLDS = 5
+FINETUNE_EPOCHS = 3
+FINETUNE_LEARNING_RATE = 1e-5
+FINETUNE_BATCH_SIZE = 8
+FINETUNE_WARMUP_RATIO = 0.1
+FINETUNED_MODEL_DIR = PROCESSED_DIR / "h4a" / "nli_finetuned"
 
 CAMP_TERMS = {
     "dem": {"party": ["democrat", "democrats", "dem", "dems", "dnc", "liberals"],
