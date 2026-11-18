@@ -11,7 +11,7 @@ def nli_probabilities(texts, terms, model, tokenizer, device, batch_size=16):
     hypotheses = [NLI_HYPOTHESIS.format(term) for term in terms]
     rows = []
     for start in range(0, len(texts), batch_size):
-        batch = tokenizer(texts[start:start + batch_size], hypotheses[start:start + batch_size], truncation=True,
+        batch = tokenizer(texts[start:start + batch_size], hypotheses[start:start + batch_size], truncation="only_first",
                           max_length=512, padding=True, return_tensors="pt").to(device)
         with torch.no_grad():
             logits = model(**batch).logits.float().cpu()

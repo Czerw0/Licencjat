@@ -60,6 +60,13 @@ CAMP_COLORS = {"dem": "#2166ac", "rep": "#b2182b", "reference": "#6b6b6b"}
 CAMP_LABELS = {"dem": "Demokraci", "rep": "Republikanie", "reference": "Odniesienia"}
 EDA_SUBREDDIT_STYLES = {"democrats": ("#2166ac", "-"), "Liberal": ("#2166ac", "--"), "Republican": ("#b2182b", "-"),
                         "Conservative": ("#b2182b", "--"), "running": ("#6b6b6b", "-"), "languagelearning": ("#6b6b6b", "--")}
+EDA_STYLE = {"figure.dpi": 110}
+PEAK_COLOR = "#f2e5c6"
+GROUP_LABELS = {"democrats": "r/democrats", "Liberal": "r/Liberal", "Republican": "r/Republican", "Conservative": "r/Conservative",
+                "dem": "Demokraci", "rep": "Republikanie", "all": "Demokraci i republikanie razem"}
+GROUP_COLORS = {"democrats": "#2166ac", "Liberal": "#2166ac", "Republican": "#b2182b", "Conservative": "#b2182b",
+                "dem": "#2166ac", "rep": "#b2182b", "all": "#333333"}
+GROUP_LINESTYLES = {"democrats": "-", "Liberal": "--", "Republican": "-", "Conservative": "--", "dem": "-", "rep": "-", "all": "-"}
 APA_STYLE = {
     "font.family": "sans-serif",
     "font.sans-serif": ["Arial", "Calibri", "Helvetica", "DejaVu Sans"],
